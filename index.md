@@ -3,45 +3,36 @@
 layout: home
 
 hero:
-  name: "ThorDocs2023"
+  name: "ThorDocs"
   text: "My messy docs"
-  tagline: My great project tagline
+  tagline: My learning journey
   actions:
     - theme: alt
+      text: Enterprise UI Dev
+      link: /enterprise-ui-dev/
+    - theme: alt
       text: Vue Masterclass
-      link: /vue/  
+      link: /vue/
     - theme: alt
       text: "Csharp"
       link: /csharp/
     - theme: alt
       text: Vitest
-      link: /vitest/  
+      link: /vitest/
     - theme: alt
       text: Godot
       link: /godot/
-    - theme: alt
-      text: Speedy Saucer
-      link: /godot/speedy_saucer
-    - theme: alt
-      text: Alien Attack
-      link: /godot/alien_attack
-    - theme: alt
-      text: Martian Mike
-      link: /godot/martian_mike
-    - theme: alt
-      text: Tips
-      link: /godot/tips
     - theme: brand
       text: Markdown Examples
       link: /markdown-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /godot/tips
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Speedy Saucer
+    details: Docs on first game made with Godot
+    link: /godot/speedy_saucer
+  - title: Alien Attack
+    details: Docs on a 2D space shooting game made with Godot
+    link: /godot/alien_attack
+  - title: Martian Mike
+    details: Docs on a 2D platform game made with Godot
 ---
-
