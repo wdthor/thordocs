@@ -51,7 +51,7 @@ module.exports = {
 - `jest-dom` adds more functionality to check if everything is in the DOM, it's DOM specific rather than JS specific
 - `user-event` dependency is for user interactions
 - We need to use `cleanup` because vue-testing-library creates a VDOM environment that persists between different tests
-Note : when using TS, install `@types/testing-library__jest-dom`
+  Note : when using TS, install `@types/testing-library__jest-dom`
 
 ::: code-group
 
@@ -60,11 +60,21 @@ pnpm add @testing-library/vue @testing-library/jest-dom @testing-library/user-ev
 ```
 
 ```js:line-numbers [setup.js]
-import { cleanup } from '@testing-library/vue';
-import matchers from '@testing-library/jest-dom/matchers';
-import { expect, afterEach } from 'vitest';
+// Old version
+import { cleanup } from '@testing-library/vue'; // [!code --]
+import matchers from '@testing-library/jest-dom/matchers'; // [!code --]
+import { expect, afterEach } from 'vitest'; // [!code --]
 
-expect.extend(matchers);
+expect.extend(matchers); // [!code --]
+
+afterEach(() => { // [!code --]
+  cleanup(); // [!code --]
+}); // [!code --]
+
+// New version since August 2023
+import '@testing-library/jest-dom/vitest';
+import { cleanup } from '@testing-library/vue';
+import { afterEach } from 'vitest';
 
 afterEach(() => {
   cleanup();
@@ -82,54 +92,5 @@ export default defineConfig({
 });
 
 ```
-:::
 
-### First test
-
-- Testing if text given is present in the dom
-
-::: code-group
-```js:line-numbers [MainNav.test.ts]
-import { render, screen } from '@testing-library/vue';
-
-import MainNav from '@/components/MainNav.vue';
-
-describe('MainNav', () => {
-  it('displays company name', () => {
-    render(MainNav);
-    // Displays the DOM in raw html
-    // screen.debug();
-    const companyName = screen.getByText('ThorWD Careers');
-    expect(companyName).toBeInTheDocument();
-  });
-});
-```
-:::
-
-### Test arrays
-::: code-group
-```js:line-numbers [MainNav.test.ts]
-import { render, screen } from '@testing-library/vue';
-
-import MainNav from '@/components/MainNav.vue';
-
-describe('MainNav', () => {
-  it('displays menu items for navigation', () => {
-    render(MainNav);
-    // When we don't know the elemen role, we can let a empty string
-    // screen.getAllByRole('');
-    // The error will show the different elements and their roles
-    const navigationMenuItems = screen.getAllByRole('listitem');
-    const navigationMenuTexts = navigationMenuItems.map((item) => item.textContent);
-    expect(navigationMenuTexts).toEqual([
-      'Teams',
-      'Locations',
-      'Life at ThorWD',
-      'How we hire',
-      'Students',
-      'Jobs',
-    ]);
-  });
-});
-```
 :::
