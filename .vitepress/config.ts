@@ -24,8 +24,6 @@ export default defineConfig({
           ],
         },
       ],
-      // This sidebar gets displayed when a user
-      // is on `config` directory.
       "/godot/": [
         {
           text: "Godot",
@@ -58,6 +56,21 @@ export default defineConfig({
         {
           text: "Enterprise UI Development",
           items: [{ text: "github CICD", link: "/enterprise-ui-dev/" }],
+        },
+      ],
+      "/typescript/": [
+        {
+          text: "TypeScript",
+          items: [{ text: "Intermediate TS", link: "/typescript/" }],
+        },
+      ],
+      "/threejs/": [
+        {
+          text: "ThreeJS",
+          items: [
+            { text: "hello world", link: "/threejs/" },
+            { text: "Camera", link: "/threejs/camera" },
+          ],
         },
       ],
     },

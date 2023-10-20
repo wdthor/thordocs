@@ -8,6 +8,12 @@ hero:
   tagline: My learning journey
   actions:
     - theme: alt
+      text: ThreeJS
+      link: /threejs/
+    - theme: alt
+      text: Typescript
+      link: /typescript/
+    - theme: alt
       text: Enterprise UI Dev
       link: /enterprise-ui-dev/
     - theme: alt
