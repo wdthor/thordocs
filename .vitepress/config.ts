@@ -43,6 +43,12 @@ export default defineConfig({
           items: [
             { text: "Installation", link: "/vue/" },
             { text: "Vitest", link: "/vue/vitest" },
+            {
+              text: "Rendering data to view",
+              link: "/vue/1-rendering-data-to-view",
+            },
+            { text: "Directives", link: "/vue/2-directives" },
+            { text: "Creating Subnav", link: "/vue/4-creating-subnav" },
           ],
         },
       ],
@@ -70,6 +76,43 @@ export default defineConfig({
           items: [
             { text: "hello world", link: "/threejs/" },
             { text: "Camera", link: "/threejs/camera" },
+          ],
+        },
+      ],
+      "/mysql/": [
+        {
+          text: "MySQL",
+          items: [
+            { text: "Introdution", link: "/mysql/" },
+            {
+              text: "Creating databases and tables",
+              link: "/mysql/3-creating-databases-and-tables/",
+            },
+            { text: "Inserting data", link: "/mysql/4-inserting-data/" },
+            { text: "CRUD Basics", link: "/mysql/5-crud-basics/" },
+            { text: "CRUD Challenge", link: "/mysql/6-crud-challenge/" },
+            { text: "String Functions", link: "/mysql/7-string-functions/" },
+            {
+              text: "Refining Selections",
+              link: "/mysql/8-refining-sections/",
+            },
+            {
+              text: "Aggregate Functions",
+              link: "/mysql/9-aggregate-functions/",
+            },
+            {
+              text: "Revisiting Data Types",
+              link: "/mysql/10-revisiting-data-types/",
+            },
+          ],
+        },
+      ],
+      "/motion-design/": [
+        {
+          text: "Motion Design",
+          items: [
+            { text: "Why is Motion important ?", link: "/motion-design/" },
+            { text: "Figma Basics", link: "/motion-design/figma-basics" },
           ],
         },
       ],

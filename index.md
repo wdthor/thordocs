@@ -8,6 +8,9 @@ hero:
   tagline: My learning journey
   actions:
     - theme: alt
+      text: MySQL
+      link: /mysql/
+    - theme: alt
       text: ThreeJS
       link: /threejs/
     - theme: alt
