@@ -49,6 +49,21 @@ export default defineConfig({
             },
             { text: "Directives", link: "/vue/2-directives" },
             { text: "Creating Subnav", link: "/vue/4-creating-subnav" },
+            {
+              text: "Create Headline Component",
+              link: "/vue/5-create-headline-component",
+            },
+            {
+              text: "Creating Job Search Form",
+              link: "/vue/6-creating-job-search-form",
+            },
+            { text: "Emitting Events", link: "/vue/7-emitting-events" },
+            { text: "Vue Router I", link: "/vue/8-vue-router-1" },
+            { text: "Vue Router II", link: "/vue/9-vue-router-2" },
+            {
+              text: "Building Job Result Page",
+              link: "/vue/10-building-job-result-page",
+            },
           ],
         },
       ],
