@@ -89,8 +89,32 @@ export default defineConfig({
         {
           text: "ThreeJS",
           items: [
-            { text: "hello world", link: "/threejs/" },
-            { text: "Camera", link: "/threejs/camera" },
+            { text: "First Scene", link: "/threejs/" },
+            { text: "Camera", link: "/threejs/2-camera" },
+            {
+              text: "Resizing and Antialiasing",
+              link: "/threejs/3-resizing-and-antialiasing",
+            },
+            {
+              text: "Manipulating Meshes",
+              link: "/threejs/4-manipulating-meshes",
+            },
+            {
+              text: "Animating Meshes",
+              link: "/threejs/5-animating-meshes",
+            },
+            {
+              text: "Mesh Geometries",
+              link: "/threejs/6-meshes-geometries",
+            },
+            {
+              text: "Mesh Materials",
+              link: "/threejs/7-meshes-materials",
+            },
+            {
+              text: "Textures",
+              link: "/threejs/8-textures",
+            },
           ],
         },
       ],
@@ -128,6 +152,31 @@ export default defineConfig({
           items: [
             { text: "Why is Motion important ?", link: "/motion-design/" },
             { text: "Figma Basics", link: "/motion-design/figma-basics" },
+          ],
+        },
+      ],
+      "/javascript-pro/": [
+        {
+          text: "JavaScript Pro",
+          items: [
+            { text: "Object Oriented JavaScript", link: "/js-pro/" },
+            {
+              text: "OOP : Newer Features in JavaScript",
+              link: "/js-pro/oop-newer-features-in-js",
+            },
+            {
+              text: "The Mysterious Keyword 'This'",
+              link: "/js-pro/the-mysterious-keyword-this",
+            },
+            {
+              text: "OOP Under The Hood : Prototypes, New & More",
+              link: "/js-pro/oop-under-the-hood",
+            },
+            { text: "Asynchronous Code", link: "/js-pro/asynchronous-code" },
+            {
+              text: "The Tricky Parts : Scope & Closure",
+              link: "/js-pro/scope-and-closures",
+            },
           ],
         },
       ],
