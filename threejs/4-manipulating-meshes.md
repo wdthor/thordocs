@@ -195,7 +195,6 @@ cubeMesh.rotation.x = THREE.MathUtils.degToRad(45); // [!code ++]
 // add axis helpers to cubeMesh and set helper's size
 const axesHelper = new THREE.AxesHelper(2);
 cubeMesh.add(axesHelper); // [!code ++]
-
 ```
 
 :::
