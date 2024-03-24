@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "ThorDocs2023",
+  title: "ThorDocs2024",
   description: "My messy docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
