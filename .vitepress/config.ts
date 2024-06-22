@@ -180,6 +180,40 @@ export default defineConfig({
           ],
         },
       ],
+      "/web-app-testing-and-tools": [
+        {
+          text: "Web App Testing & Tools",
+          items: [
+            {
+              text: "Introduction",
+              link: "/web-app-testing",
+            },
+            {
+              text: "Unit Testing & Mocking",
+              link: "/web-app-testing/unit-testing",
+            },
+          ],
+        },
+      ],
+      "automation-python": [
+        {
+          text: "The Automation Bootcamp",
+          items: [
+            {
+              text: "Python Basics",
+              link: "/automation-python/",
+            },
+            {
+              text: "Working with files",
+              link: "/3-working-with-files/",
+            },
+            {
+              text: "Paths and Folders",
+              link: "/3-working-with-files/",
+            },
+          ],
+        },
+      ],
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/wdthor/thordocs" },

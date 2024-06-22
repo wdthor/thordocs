@@ -8,6 +8,12 @@ hero:
   tagline: My learning journey
   actions:
     - theme: alt
+      text: Automation Python
+      link: /automation-python/
+    - theme: alt
+      text: Web App Testing
+      link: /web-app-testing/
+    - theme: alt
       text: MySQL
       link: /mysql/
     - theme: alt
