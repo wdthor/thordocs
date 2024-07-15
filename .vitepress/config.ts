@@ -205,11 +205,11 @@ export default defineConfig({
             },
             {
               text: "Working with files",
-              link: "/3-working-with-files/",
+              link: "/automation-python/3-working-with-files/",
             },
             {
               text: "Paths and Folders",
-              link: "/4-paths-and-folders/",
+              link: "/automation-python/4-paths-and-folders/",
             },
           ],
         },
