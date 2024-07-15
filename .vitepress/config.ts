@@ -209,7 +209,7 @@ export default defineConfig({
             },
             {
               text: "Paths and Folders",
-              link: "/3-working-with-files/",
+              link: "/4-paths-and-folders/",
             },
           ],
         },
