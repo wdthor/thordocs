@@ -6,10 +6,7 @@ export default defineConfig({
   description: "My messy docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
+    nav: [{ text: "Home", link: "/" }],
 
     sidebar: {
       // This sidebar gets displayed when a user
@@ -180,7 +177,7 @@ export default defineConfig({
           ],
         },
       ],
-      "/web-app-testing-and-tools": [
+      "/web-app-testing-and-tools/": [
         {
           text: "Web App Testing & Tools",
           items: [
@@ -195,7 +192,7 @@ export default defineConfig({
           ],
         },
       ],
-      "automation-python": [
+      "/automation-python/": [
         {
           text: "The Automation Bootcamp",
           items: [
@@ -210,6 +207,21 @@ export default defineConfig({
             {
               text: "Paths and Folders",
               link: "/automation-python/4-paths-and-folders",
+            },
+          ],
+        },
+      ],
+      "/angular/": [
+        {
+          text: "Angular",
+          items: [
+            {
+              text: "Angular introduction",
+              link: "/angular/",
+            },
+            {
+              text: "Component Fundamentals",
+              link: "/angular/1-component-fundamentals",
             },
           ],
         },
