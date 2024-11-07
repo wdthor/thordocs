@@ -7,7 +7,6 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Home", link: "/" }],
-
     sidebar: {
       // This sidebar gets displayed when a user
       // is on `guide` directory.
@@ -231,4 +230,5 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/wdthor/thordocs" },
     ],
   },
+  ignoreDeadLinks: true,
 });

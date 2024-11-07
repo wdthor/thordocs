@@ -37,9 +37,6 @@ hero:
     - theme: alt
       text: Godot
       link: /godot/
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
 
 features:
   - title: Speedy Saucer
