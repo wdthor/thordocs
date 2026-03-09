@@ -37,3 +37,35 @@ tween.tween_callback(get_tree().reload_current_scene)
 ```ts
 @onready var target = get_tree().get_first_node_in_group("target")
 ```
+
+## What nodes are needed for a player ?
+
+- CharacterBody3D : A Physics Body designed for characters moved by scripts
+- CollisionShape3D : A shape for enabling the player to collide with the game world
+- MeshInstance3D : A mesh to make the player visible
+- Camera3D : For the views to follow the player in 3rd person
+- SpringArm3D - for a more robust 3rd person view (moves the camera closer to the player when inside a tight place)
+
+### Player structure
+
+- Player (folder)
+- CharacterBody3D (root node)
+
+  - CollisionShape3D
+    - Select Shape => new CapsuleShape3D
+  - MeshInstance3D
+    - Select Mesh => new CapsuleMesh
+  - Camera3D
+
+    OR
+
+  - SpringArm3D
+    - Camera3D
+
+### Setup Camera3D for 3rd person view
+
+- Select the Camera3D
+- Position : y=2, z=4
+- Rotation : x=-25
+
+### Setup Camera3D for 3rd person view
