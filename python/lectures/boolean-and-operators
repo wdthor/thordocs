@@ -1,0 +1,29 @@
+# Boolean and operators
+
+## Boolean values
+
+```py
+True
+False
+type(True) # <class 'bool'>
+```
+
+## Comparison operators
+
+```py
+1 > 2 # False
+1 < 2 # True
+1 == 2 # False
+1 != 2 # True
+1 >= 2 # False
+1 <= 2 # True
+```
+
+## Logical operators
+
+```py
+1 > 2 and 2 > 3 # False
+1 < 2 and 2 < 3 # True
+1 > 2 or 2 > 3 # False
+1 < 2 or 2 > 3 # True
+```
