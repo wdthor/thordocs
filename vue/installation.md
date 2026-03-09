@@ -107,7 +107,7 @@ module.exports = {
 
 :::
 
-## Add colors config
+### Add colors config
 
 ::: code-group
 
@@ -137,3 +137,63 @@ module.exports = {
 - Tailwind will generate css classes based on this setting
   - bg-brand-gray-1
   - text-brand-gray-1
+
+## Install Unplugin Vue Router
+
+['Unplugin Vue Router'](https://uvr.esm.is/)
+
+```sh
+pnpm add -D unplugin-vue-router
+```
+
+```js:line-numbers [vite.config.ts]
+import VueRouter from 'unplugin-vue-router/vite'
+
+export default defineConfig({
+  plugins: [
+    VueRouter()
+  ]
+})
+```
+
+- Follow the steps mentioned in the documentation
+- All files are lazy loaded
+
+## Install Iconify
+
+['Iconify'](https://iconify.design/)
+
+```sh
+# Can use SSR
+pnpm add iconify-icon
+# OR
+# Cannot use SSR
+pnpm add @iconify/vue
+```
+
+### iconify-icon usage
+
+```ts:line-numbers [main.ts]
+import 'iconify-icon'
+```
+
+```ts:line-numbers [vite.config.ts]
+plugins: [
+    VueRouter(),
+    vue({ // [!code ++]
+      template: { // [!code ++]
+        compilerOptions: {// [!code ++]
+          isCustomElement: (element) => element.startsWith('iconify-icon'),// [!code ++]
+        },// [!code ++]
+      },// [!code ++]
+    }),// [!code ++]
+    vueDevTools(),
+    tailwindcss(),
+  ],
+```
+
+```ts:line-numbers [App.vue]
+<template>
+  <iconify-icon icon="mdi:home" />
+</template>
+```
