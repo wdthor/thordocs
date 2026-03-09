@@ -8,29 +8,14 @@ hero:
   tagline: My learning journey
   actions:
     - theme: alt
-      text: Automation Python
-      link: /automation-python/
-    - theme: alt
-      text: Web App Testing
-      link: /web-app-testing/
-    - theme: alt
-      text: MySQL
-      link: /mysql/
-    - theme: alt
-      text: ThreeJS
-      link: /threejs/
+      text: "Csharp"
+      link: /csharp/
     - theme: alt
       text: Typescript
       link: /typescript/
     - theme: alt
       text: Enterprise UI Dev
       link: /enterprise-ui-dev/
-    - theme: alt
-      text: Vue Masterclass
-      link: /vue/
-    - theme: alt
-      text: "Csharp"
-      link: /csharp/
     - theme: alt
       text: Vitest
       link: /vitest/
@@ -39,6 +24,9 @@ hero:
       link: /godot/
 
 features:
+  - title: Rocket Boost
+    details: Docs related to Rocket Boost with Unity
+    link: /unity/rocket-boost
   - title: Speedy Saucer
     details: Docs on first game made with Godot
     link: /godot/speedy_saucer

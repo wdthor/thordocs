@@ -15,8 +15,6 @@ export default defineConfig({
           text: "Vitest",
           items: [
             { text: "Vitest Settings", link: "/vitest/" },
-            { text: "One", link: "/guide/one" },
-            { text: "Two", link: "/guide/two" },
           ],
         },
       ],
@@ -25,7 +23,7 @@ export default defineConfig({
           text: "Godot",
           items: [
             { text: "Shortcuts", link: "/godot/shortcuts" },
-            { text: "Lexical", link: "/godot/" },
+            { text: "Introduction", link: "/godot/" },
             { text: "Methods", link: "/godot/methods" },
             { text: "Speedy Saucer", link: "/godot/speedy_saucer" },
             { text: "Alien Attack", link: "/godot/alien_attack" },
@@ -101,11 +99,11 @@ export default defineConfig({
             },
             {
               text: "Mesh Geometries",
-              link: "/threejs/6-meshes-geometries",
+              link: "/threejs/6-mesh-geometries",
             },
             {
               text: "Mesh Materials",
-              link: "/threejs/7-meshes-materials",
+              link: "/threejs/7-mesh-materials",
             },
             {
               text: "Textures",
@@ -118,7 +116,7 @@ export default defineConfig({
         {
           text: "MySQL",
           items: [
-            { text: "Introdution", link: "/mysql/" },
+            { text: "Introduction", link: "/mysql/" },
             {
               text: "Creating databases and tables",
               link: "/mysql/3-creating-databases-and-tables",
@@ -147,7 +145,6 @@ export default defineConfig({
           text: "Motion Design",
           items: [
             { text: "Why is Motion important ?", link: "/motion-design/" },
-            { text: "Figma Basics", link: "/motion-design/figma-basics" },
           ],
         },
       ],
@@ -155,38 +152,34 @@ export default defineConfig({
         {
           text: "JavaScript Pro",
           items: [
-            { text: "Object Oriented JavaScript", link: "/js-pro/" },
+            { text: "Object Oriented JavaScript", link: "/javascript-pro/" },
             {
               text: "OOP : Newer Features in JavaScript",
-              link: "/js-pro/oop-newer-features-in-js",
+              link: "/javascript-pro/oop-newer-features-in-js",
             },
             {
               text: "The Mysterious Keyword 'This'",
-              link: "/js-pro/the-mysterious-keyword-this",
+              link: "/javascript-pro/the-mysterious-keyword-this",
             },
             {
               text: "OOP Under The Hood : Prototypes, New & More",
-              link: "/js-pro/oop-under-the-hood",
+              link: "/javascript-pro/oop-under-the-hood",
             },
-            { text: "Asynchronous Code", link: "/js-pro/asynchronous-code" },
+            { text: "Asynchronous Code", link: "/javascript-pro/asynchronous-code" },
             {
               text: "The Tricky Parts : Scope & Closure",
-              link: "/js-pro/scope-and-closures",
+              link: "/javascript-pro/scope-and-closures",
             },
           ],
         },
       ],
-      "/web-app-testing-and-tools/": [
+      "/web-app-testing/": [
         {
           text: "Web App Testing & Tools",
           items: [
             {
               text: "Introduction",
-              link: "/web-app-testing",
-            },
-            {
-              text: "Unit Testing & Mocking",
-              link: "/web-app-testing/unit-testing",
+              link: "/web-app-testing/",
             },
           ],
         },
@@ -225,6 +218,29 @@ export default defineConfig({
           ],
         },
       ],
+      "/unity/": [
+        {
+          text: "Unity",
+          items: [
+            {
+              text: "Rocket Boost",
+              link: "/unity/rocket-boost"
+            },
+            {
+              text: "Debugging",
+              link: "/unity/debugging"
+            },
+            {
+              text: "Recipes",
+              link: "/unity/recipes"
+            },
+            {
+              text: "Tips",
+              link: "/unity/tips"
+            },
+          ]
+        }
+      ]
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/wdthor/thordocs" },
